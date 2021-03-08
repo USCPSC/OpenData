@@ -229,7 +229,7 @@
         "programCode": ["000:000"],
         "distribution": [
            {
-           "downloadURL":"https://www.cpsc.gov/data",
+           "downloadURL":" https://www.cpsc.gov/Research--Statistics/Clearinghouse-Online-Query-Tool",
            "mediaType": "application/html"
            }
         ],
