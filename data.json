@@ -1,241 +1,514 @@
 {
-"conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
-"dataset": [
-   {
-   "title": "Recalls API",
-   "description": "CPSC provides accessibility to recalls via a recall database. The information is publicly available to consumers and businesses as well as software and application developers.",
-   "keyword": [
-      "CPSC",
-	  "Recalls",
-	  "API"
-   ],
-   "modified": "2021-03-01T00:00:00Z",
-   "publisher": {"@type": "org:Organization","name": "U.S. Consumer Product Safety Commission"},
-   "contactPoint": {"@type": "vcard:Contact","fn": "Salomon, Alexandre","hasEmail": "mailto:asalomon@cpsc.gov"},
-   "identifier": "100",
-   "accessLevel": "public",
-   "rights": "publicly available",
-   "bureauCode": ["343:00"],
-   "programCode": ["000:000"],
-   "distribution": [
-      {
-	  "accessURL": "http://www.saferproducts.gov/RestWebServices/Recall?format=json",
-	  "description": "REST API with JSON and XML output",
-	  "format": "API"
+  "@context": "https://resources.data.gov/ontology/dcat-us#",
+  "@type": "Catalog",
+  "@id": "https://cpsc.gov/data.json",
+  "conformsTo": {
+    "@type": "Standard",
+    "title": "DCAT-US v3.0",
+    "identifier": {
+      "@type": "Identifier",
+      "notation": "DCAT-US-3.0",
+      "schemaAgency": "U.S. General Services Administration"
+    }
+  },
+  "title": "U.S. Consumer Product Safety Commission Data Catalog",
+  "description": "Data inventory for public CPSC datasets harvested by Data.gov as of 2026-09-29.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "U.S. Consumer Product Safety Commission",
+    "subOrganizationOf": {
+      "@type": "Organization",
+      "name": "Executive Office of the President / Independent Agency"
+    }
+  },
+  "contactPoint": [
+	  {
+		"@type": "Kind",
+		"fn": "CPSC Open Data",
+		"hasEmail": "mailto:suggestions@cpsc.gov"
 	  }
-   ],
-   "license": "http://www.usa.gov/publicdomain/label/1.0/",
-   "spatial": null,
-   "temporal": null
-   },
-   {
-   "title": "Civil & Criminal Penalties",
-   "description": "When CPSC is involved in a civil or criminal investigations into violations of the Consumer Products Safety Act the Commission publishes final determinations and those penalties are recorded in the Civil and Criminal Penalties Database. You can search this database for records by civil or criminal penalties as well as by company, product, and fiscal year.",
-   "keyword": [
-      "CPSC",
-	  "API",
-	  "Civil",
-	  "Criminal",
-	  "Penalities"
-   ],
-   "modified": "2021-03-01T00:00:00Z",
-   "publisher": {"@type": "org:Organization","name": "U.S. Consumer Product Safety Commission"},
-   "contactPoint": {"@type": "vcard:Contact","fn": "Salomon, Alexandre","hasEmail": "mailto:asalomon@cpsc.gov"},
-   "identifier": "200",
-   "accessLevel": "public",
-   "rights": "publicly available",
-   "bureauCode": ["343:00"],
-   "programCode": ["000:000"],
-   "distribution": [
-      {
-	  "accessURL": "https://www.saferproducts.gov/RestWebServices/Penalty?format=json",
-	  "description": "REST API with JSON and XML output",
-	  "format": "API"
-	  }
-   ],
-   
-   "license": "http://www.usa.gov/publicdomain/label/1.0/",
-   "spatial": null,
-   "temporal": null
-   },
-   {
-   "title": "Recall Violations",
-   "description": "For all products regulated by the CPSC, the Commission issues a Letter of Advice (LOA) when there is a violation of a mandatory standard",
-   "keyword": [
-      "CPSC",
-	  "Recalls",
-	  "violations",
-	  "standards"
-   ],
-   "modified": "2021-03-01T00:00:00Z",
-   "publisher": {"@type": "org:Organization","name": "U.S. Consumer Product Safety Commission"},
-   "contactPoint": {"@type": "vcard:Contact","fn": "Salomon, Alexandre","hasEmail": "mailto:asalomon@cpsc.gov"},
-   "identifier": "300",
-   "accessLevel": "public",
-   "rights": "publicly available",
-   "bureauCode": ["343:00"],
-   "programCode": ["000:000"],
-   "distribution": [
-      {
-	  "downloadURL":"http://www.cpsc.gov/Recalls/Violations/",
-	  "mediaType": "text/csv",
-	  "format": "CSV"
-	  }
-   ],
-   
-   "license": "http://www.usa.gov/publicdomain/label/1.0/",
-   "spatial": null,
-   "temporal": null
-   },
-   {
-   "title": "CPSC-Accepted Testing Laboratories",
-   "description": "An up-to-date list of entities that have been accredited to assess conformity with product safety rules",
-   "keyword": [
-      "CPSC",
-	  "Testing",
-	  "Laboratory",
-	  "product"
-   ],
-   "modified": "2021-03-01T00:00:00Z",
-   "publisher": {"@type": "org:Organization","name": "U.S. Consumer Product Safety Commission"},
-   "contactPoint": {"@type": "vcard:Contact","fn": "Salomon, Alexandre","hasEmail": "mailto:asalomon@cpsc.gov"},
-   "identifier": "400",
-   "accessLevel": "public",
-   "rights": "publicly available",
-   "bureauCode": ["343:00"],
-   "programCode": ["000:000"],
-   "distribution": [
-      {
-	  "downloadURL": "http://www.cpsc.gov/cgi-bin/labsearch/",
-	  "mediaType": "application/html"
-	  }
-   ],
-   
-   "license": "http://www.usa.gov/publicdomain/label/1.0/",
-   "spatial": null,
-   "temporal": null
-   },
-   {
-   "title": "CPSC's National Electronic Injury Surveillance System (NEISS)",
-   "description": "CPSC's National Electronic Injury Surveillance System (NEISS) is a national probability sample of hospitals in the U.S. and its territories. Patient information is collected from each NEISS hospital for every emergency visit involving an injury associated with consumer products.",
-   "keyword": [
-      "CPSC",
-	  "Injuries",
-	  "ER",
-	  "reports",
-	  "hospitals"
-   ],
-   "modified": "2021-03-01T00:00:00Z",
-   "publisher": {"@type": "org:Organization","name": "U.S. Consumer Product Safety Commission"},
-   "contactPoint": {"@type": "vcard:Contact","fn": "Salomon, Alexandre","hasEmail": "mailto:asalomon@cpsc.gov"},
-   "identifier": "500",
-   "accessLevel": "public",
-   "rights": "publicly available",
-   "bureauCode": ["343:00"],
-   "programCode": ["000:000"],
-   "distribution": [
-      {
-	  "downloadURL":"http://www.cpsc.gov/cgibin/NEISSQuery/home.aspx",
-	  "mediaType": "application/html"
-	  }
-   ],
-   
-   "license": "http://www.usa.gov/publicdomain/label/1.0/",
-   "spatial": null,
-   "temporal": null
-   },
-   {
-   "title": "SaferProducts API",
-   "description": "On March 11, 2011, the U.S. Consumer Product Safety Commission launched SaferProducts.gov. This site hosts the agency's new Publicly Available Consumer Product Safety Information Database. On SaferProducts.gov, consumers can submit reports of harm or reports of potential harm. After a short amount of time for review by the agency and named manufacturer, these reports go live on SaferProducts.gov and are searchable by the public. The public also can export search results. The Application Protocol Interface (API), to open the published SaferProducts.gov data to developers and businesses so that the information in SaferProducts.gov can be accessed by an even greater number of consumers online and on mobile devices.",
-   "keyword": [
-      "CPSC",
-	  "consumer",
-	  "products",
-	  "child safety",
-	  "safety",
-	  "recall",
-	  "recalls",
-	  "children",
-	  "baby",
-	  "infant",
-	  "child",
-	  "hazard",
-	  "hazardous"
-   ],
-   "modified": "2021-03-01T00:00:00Z",
-   "publisher": {"@type": "org:Organization","name": "U.S. Consumer Product Safety Commission"},
-   "contactPoint": {"@type": "vcard:Contact","fn": "Salomon, Alexandre","hasEmail": "mailto:asalomon@cpsc.gov"},
-   "identifier": "600",
-   "accessLevel": "public",
-   "rights": "publicly available",
-   "bureauCode": ["343:00"],
-   "programCode": ["000:000"],
-   "distribution": [
-      {
-	  "downloadURL":"https://www.saferproducts.gov/FAQs/FrequentlyAskedQuestions11#item4-1-1",
-	   "mediaType": "application/html"
-	  }
-   ],
-   
-   "license": "http://www.usa.gov/publicdomain/label/1.0/",
-   "references": ["https://www.saferproducts.gov/FAQs/FrequentlyAskedQuestions"],
-   "spatial": null,
-   "temporal": null
-   },
-   {
-    "title": "CPSC's monthly Progress Report (MPR)",
-    "description": "The Monthly Progress Report (MPR) is provided by recalling firms to report on the progress of the recall.  The MPR reports recalled products at the Manufacturer, Distributor, Retailer, and Consumer level on a monthly basis.",
-    "keyword": [
-       "CPSC",
-       "MPR",
-       "reports",
-       "recalls"
-    ],
-    "modified": "2021-03-04T00:00:00Z",
-    "publisher": {"@type": "org:Organization","name": "U.S. Consumer Product Safety Commission"},
-    "contactPoint": {"@type": "vcard:Contact","fn": "Salomon, Alexandre","hasEmail": "mailto:asalomon@cpsc.gov"},
-    "identifier": "700",
-    "accessLevel": "public",
-    "rights": "publicly available",
-    "bureauCode": ["343:00"],
-    "programCode": ["000:000"],
-    "distribution": [
-       {
-       "downloadURL":"https://www.cpsc.gov/data",
-       "mediaType": "application/html"
-       }
-    ],
-    
-    "license": "http://www.usa.gov/publicdomain/label/1.0/",
-    "spatial": null,
-    "temporal": null
+	],
+  "homepage": {
+    "@type": "Document",
+    "title": "CPSC Data",
+    "accessURL": "https://www.cpsc.gov/Data"
+  },
+  "language": ["en"],
+  "issued": "2021-03-01",
+  "modified": "2026-09-29",
+  "license": "https://www.usa.gov/publicdomain/label/1.0/",
+  "spatial": [
+    {
+      "@type": "Location",
+      "prefLabel": "United States"
+    }
+  ],
+  "themeTaxonomy": [
+    {
+      "@type": "ConceptScheme",
+      "title": "Consumer product safety"
+    }
+  ],
+  "rights": [
+    "Public-domain U.S. government work. No copyright claimed under 17 U.S.C. § 105."
+  ],
+  "dataset": [
+    {
+      "@type": "Dataset",
+      "@id": "https://cpsc.gov/dataset/recalls-api",
+      "identifier": "https://catalog.data.gov/dataset/recalls-api",
+      "title": "Recalls API",
+      "description": "CPSC recall database covering decades of consumer product recalls. Publicly available to consumers, businesses, and application developers.",
+      "keyword": ["recalls", "consumer products", "product safety", "API"],
+      "issued": "2021-03-01",
+      "modified": "2021-03-01",
+      "language": ["en"],
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Consumer Product Safety Commission"
+      },
+      "contactPoint": [
+		  {
+			"@type": "Kind",
+			"fn": "CPSC Open Data",
+			"hasEmail": "mailto:suggestions@cpsc.gov"
+		  }
+		],
+      "rightsHolder": [
+		  {
+			"@type": "Organization",
+			"name": "U.S. Consumer Product Safety Commission"
+		  }
+		],
+      "accessRights": "public",
+      "license": "https://www.usa.gov/publicdomain/label/1.0/",
+      "theme": [
+        {
+          "@type": "Concept",
+          "prefLabel": "Product recalls"
+        }
+      ],
+      "landingPage": {
+        "@type": "Document",
+        "title": "Data.gov: Recalls API",
+        "accessURL": "https://catalog.data.gov/dataset/recalls-api"
+      },
+      "describedBy": null,
+      "distribution": [
+        {
+          "@type": "Distribution",
+          "title": "Recalls REST API (JSON)",
+          "accessURL": "https://www.saferproducts.gov/RestWebServices/Recall?format=json",
+          "mediaType": "application/json",
+          "format": "API"
+        }
+      ]
     },
     {
-        "title": "Online Epidemiological Data Clearinghouse",
-        "description": "CPSC's epidemiological data include reports of incidents involving death, injury, or potential injury that are associated with consumer products. The online Clearinghouse posts summary information from death certificates (DTHS), medical examiner reports (MECAP reports), reports published on Saferproducts.gov, Newsclips, and other submissions from consumers, healthcare professionals, state, federal, and local agencies (IPII), and public safety entities.",
-        "keyword": [
-           "CPSC",
-           "clearinghouse",
-           "death",
-           "Epidemiological"
-        ],
-        "modified": "2021-03-04T00:00:00Z",
-        "publisher": {"@type": "org:Organization","name": "U.S. Consumer Product Safety Commission"},
-        "contactPoint": {"@type": "vcard:Contact","fn": "Salomon, Alexandre","hasEmail": "mailto:asalomon@cpsc.gov"},
-        "identifier": "800",
-        "accessLevel": "public",
-        "rights": "publicly available",
-        "bureauCode": ["343:00"],
-        "programCode": ["000:000"],
-        "distribution": [
-           {
-           "downloadURL":" https://www.cpsc.gov/Research--Statistics/Clearinghouse-Online-Query-Tool",
-           "mediaType": "application/html"
-           }
-        ],
-        
-        "license": "http://www.usa.gov/publicdomain/label/1.0/",
-        "spatial": null,
-        "temporal": null
+      "@type": "Dataset",
+      "@id": "https://cpsc.gov/dataset/saferproducts-api",
+      "identifier": "https://catalog.data.gov/dataset/saferproducts-api",
+      "title": "SaferProducts Public Consumer Product Safety Information Database",
+      "description": "Publicly Available Consumer Product Safety Information Database hosted at SaferProducts.gov, launched 11 March 2011. Includes recalls and unsafe product reports.",
+      "keyword": ["saferproducts", "incident reports", "recalls", "consumer complaints"],
+      "issued": "2011-03-11",
+      "modified": "2021-03-01",
+      "language": ["en"],
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Consumer Product Safety Commission"
+      },
+      "contactPoint": [
+		  {
+			"@type": "Kind",
+			"fn": "CPSC Open Data",
+			"hasEmail": "mailto:suggestions@cpsc.gov"
+		  }
+		],
+      "accessRights": "public",
+      "license": "https://www.usa.gov/publicdomain/label/1.0/",
+      "theme": [
+        {
+          "@type": "Concept",
+          "prefLabel": "Incident reports"
         }
-]}
+      ],
+      "landingPage": {
+        "@type": "Document",
+        "title": "SaferProducts.gov",
+        "accessURL": "https://www.saferproducts.gov/"
+      },
+      "describedBy": null,
+      "distribution": [
+        {
+          "@type": "Distribution",
+          "title": "SaferProducts.gov",
+          "accessURL": "https://www.saferproducts.gov/",
+          "mediaType": "text/html",
+          "format": "HTML"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://cpsc.gov/dataset/cpscs-national-electronic-injury-surveillance-system-neiss",
+      "identifier": "https://catalog.data.gov/dataset/cpscs-national-electronic-injury-surveillance-system-neiss",
+      "title": "National Electronic Injury Surveillance System (NEISS)",
+      "description": "National probability sample of hospitals in the United States and its territories. Patient information is collected from each NEISS hospital for consumer product-related injuries treated in emergency departments. Operated by CPSC since 1972.",
+      "keyword": ["NEISS", "injury surveillance", "emergency department", "consumer products"],
+      "issued": "2021-03-01",
+      "modified": "2021-03-01",
+      "language": ["en"],
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Consumer Product Safety Commission"
+      },
+      "contactPoint": [
+		  {
+			"@type": "Kind",
+			"fn": "CPSC Open Data",
+			"hasEmail": "mailto:suggestions@cpsc.gov"
+		  }
+		],
+      "accessRights": "public",
+      "license": "https://www.usa.gov/publicdomain/label/1.0/",
+      "theme": [
+        {
+          "@type": "Concept",
+          "prefLabel": "Injury surveillance"
+        }
+      ],
+      "spatial": [
+        {
+          "@type": "Location",
+          "prefLabel": "United States and territories"
+        }
+      ],
+      "landingPage": {
+        "@type": "Document",
+        "title": "NEISS Query",
+        "accessURL": "https://www.cpsc.gov/cgibin/NEISSQuery/home.aspx"
+      },
+      "describedBy": null,
+      "distribution": [
+        {
+          "@type": "Distribution",
+          "title": "NEISS online query",
+          "accessURL": "https://www.cpsc.gov/cgibin/NEISSQuery/home.aspx",
+          "mediaType": "text/html",
+          "format": "HTML"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://cpsc.gov/dataset/cpsc-accepted-testing-laboratories",
+      "identifier": "400",
+      "title": "CPSC-Accepted Testing Laboratories",
+      "description": "Up-to-date list of entities accredited to assess conformity with CPSC product safety rules.",
+      "keyword": ["laboratories", "accreditation", "conformity assessment", "third-party testing"],
+      "issued": "2021-03-01",
+      "modified": "2021-03-01",
+      "language": ["en"],
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Consumer Product Safety Commission"
+      },
+      "contactPoint": [
+		  {
+			"@type": "Kind",
+			"fn": "CPSC Open Data",
+			"hasEmail": "mailto:suggestions@cpsc.gov"
+		  }
+		],
+      "accessRights": "public",
+      "license": "https://www.usa.gov/publicdomain/label/1.0/",
+      "theme": [
+        {
+          "@type": "Concept",
+          "prefLabel": "Conformity assessment"
+        }
+      ],
+      "landingPage": {
+        "@type": "Document",
+        "title": "CPSC laboratory search",
+        "accessURL": "https://www.cpsc.gov/cgi-bin/labsearch/"
+      },
+      "describedBy": null,
+      "distribution": [
+        {
+          "@type": "Distribution",
+          "title": "Laboratory search",
+          "accessURL": "https://www.cpsc.gov/cgi-bin/labsearch/",
+          "mediaType": "text/html",
+          "format": "HTML"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://cpsc.gov/dataset/recall-violations",
+      "identifier": "https://catalog.data.gov/dataset/recall-violations",
+      "title": "Recall Violations",
+      "description": "For products regulated by CPSC, the Commission issues a Letter of Advice (LOA) when there is a violation of a mandatory standard. Public list of import and marketplace violation letters beginning October 2012 where the firm confirmed the violation and completed corrective action.",
+      "keyword": ["violations", "letter of advice", "imports", "mandatory standards"],
+      "issued": "2021-03-01",
+      "modified": "2021-03-01",
+      "language": ["en"],
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Consumer Product Safety Commission"
+      },
+      "contactPoint": [
+		  {
+			"@type": "Kind",
+			"fn": "CPSC Open Data",
+			"hasEmail": "mailto:suggestions@cpsc.gov"
+		  }
+		],
+      "accessRights": "public",
+      "license": "https://www.usa.gov/publicdomain/label/1.0/",
+      "theme": [
+        {
+          "@type": "Concept",
+          "prefLabel": "Enforcement"
+        }
+      ],
+      "temporal": [
+		  {
+			"@type": "PeriodOfTime",
+			"startDate": "2012-10-01"
+		  }
+		],
+      "landingPage": {
+        "@type": "Document",
+        "title": "Recall Violations",
+        "accessURL": "https://www.cpsc.gov/Recalls/Violations/"
+      },
+      "describedBy": null,
+      "distribution": [
+        {
+          "@type": "Distribution",
+          "title": "Violations listing",
+          "accessURL": "https://www.cpsc.gov/Recalls/Violations/",
+          "mediaType": "text/csv",
+          "format": "CSV"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://cpsc.gov/dataset/cpscs-monthly-progress-report-mpr",
+      "identifier": "https://catalog.data.gov/dataset/cpscs-monthly-progress-report-mpr",
+      "title": "Monthly Progress Report (MPR)",
+      "description": "Monthly Progress Reports submitted by recalling firms on recall progress. Reports recalled products at manufacturer, distributor, retailer, and consumer levels.",
+      "keyword": ["recall progress", "MPR", "corrective action"],
+      "issued": "2021-03-04",
+      "modified": "2021-03-04",
+      "language": ["en"],
+      "accrualPeriodicity": "monthly",
+      "inSeries": "https://www.cpsc.gov/data/series/monthly-progress-report",
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Consumer Product Safety Commission"
+      },
+      "contactPoint": [
+		  {
+			"@type": "Kind",
+			"fn": "CPSC Open Data",
+			"hasEmail": "mailto:suggestions@cpsc.gov"
+		  }
+		],
+      "accessRights": "public",
+      "license": "https://www.usa.gov/publicdomain/label/1.0/",
+      "theme": [
+        {
+          "@type": "Concept",
+          "prefLabel": "Recall effectiveness"
+        }
+      ],
+      "landingPage": {
+        "@type": "Document",
+        "title": "Data.gov: MPR",
+        "accessURL": "https://catalog.data.gov/dataset/cpscs-monthly-progress-report-mpr"
+      },
+      "describedBy": null,
+      "distribution": [
+        {
+          "@type": "Distribution",
+          "title": "MPR web resource",
+          "accessURL": "https://catalog.data.gov/dataset/cpscs-monthly-progress-report-mpr",
+          "mediaType": "text/html",
+          "format": "HTML"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://cpsc.gov/dataset/civil-criminal-penalties",
+      "identifier": "200",
+      "title": "Civil and Criminal Penalties",
+      "description": "Final civil and criminal penalty determinations published when CPSC concludes investigations into violations of the Consumer Product Safety Act. Searchable by penalty type, company, product, and fiscal year.",
+      "keyword": ["penalties", "enforcement", "civil", "criminal"],
+      "issued": "2021-03-01",
+      "modified": "2021-03-01",
+      "language": ["en"],
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Consumer Product Safety Commission"
+      },
+      "contactPoint": [
+		  {
+			"@type": "Kind",
+			"fn": "CPSC Open Data",
+			"hasEmail": "mailto:suggestions@cpsc.gov"
+		  }
+		],
+      "accessRights": "public",
+      "license": "https://www.usa.gov/publicdomain/label/1.0/",
+      "theme": [
+        {
+          "@type": "Concept",
+          "prefLabel": "Enforcement"
+        }
+      ],
+      "landingPage": {
+        "@type": "Document",
+        "title": "Civil and Criminal Penalties Database",
+        "accessURL": "https://www.cpsc.gov/Data"
+      },
+      "describedBy": null,
+      "distribution": [
+        {
+          "@type": "Distribution",
+          "title": "Penalties REST API (JSON)",
+          "accessURL": "https://www.saferproducts.gov/RestWebServices/Penalty?format=json",
+          "mediaType": "application/json",
+          "format": "API"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "@type": "DataService",
+      "@id": "https://cpsc.gov/RestWebServices/Recall",
+      "identifier": "https://www.saferproducts.gov/RestWebServices/Recall",
+      "title": "CPSC Recalls Data Service",
+      "description": "REST service exposing CPSC consumer product recall records in JSON (and related formats).",
+      "endpointURL": [
+        "https://www.saferproducts.gov/RestWebServices/Recall?format=json"
+      ],
+      "endpointDescription": [
+        "https://www.cpsc.gov/Data"
+      ],
+      "contactPoint": [
+		  {
+			"@type": "Kind",
+			"fn": "CPSC Open Data",
+			"hasEmail": "mailto:suggestions@cpsc.gov"
+		  }
+		],
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Consumer Product Safety Commission"
+      },
+      "license": "https://www.usa.gov/publicdomain/label/1.0/",
+      "accessRights": "Public access. No key required for the documented JSON endpoint.",
+      "servesDataset": [
+        {
+          "@type": "Dataset",
+          "@id": "https://cpsc.gov/dataset/recalls-api",
+          "title": "Recalls API",
+		  "description": "REST service exposing CPSC consumer product recall records in JSON (and other formats).",
+		  "contactPoint": [
+			  {
+				"@type": "Kind",
+				"fn": "CPSC Open Data",
+				"hasEmail": "mailto:asalomon@cpsc.gov"
+			  }
+			],
+		  "identifier": "https://catalog.data.gov/dataset/recalls-api"
+        }
+      ]
+    },
+    {
+      "@type": "DataService",
+      "@id": "https://cpsc.gov/RestWebServices/Penalty",
+      "identifier": "https://www.saferproducts.gov/RestWebServices/Penalty",
+      "title": "CPSC Civil and Criminal Penalties Data Service",
+      "description": "REST service exposing CPSC civil and criminal penalty records in JSON.",
+      "endpointURL": [
+        "https://www.saferproducts.gov/RestWebServices/Penalty?format=json"
+      ],
+      "endpointDescription": [
+        "https://www.cpsc.gov/Data"
+      ],
+      "contactPoint": [
+		  {
+			"@type": "Kind",
+			"fn": "CPSC Open Data",
+			"hasEmail": "mailto:suggestions@cpsc.gov"
+		  }
+		],
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Consumer Product Safety Commission"
+      },
+      "license": "https://www.usa.gov/publicdomain/label/1.0/",
+      "accessRights": "Public access.",
+      "servesDataset": [
+        {
+          "@type": "Dataset",
+          "@id": "https://cpsc.gov/dataset/civil-criminal-penalties",
+          "title": "Civil and Criminal Penalties",
+		  "identifier": "https://www.saferproducts.gov/RestWebServices/Penalty",
+		  "description": "REST service exposing CPSC civil and criminal penalty records in JSON.",
+		  "contactPoint": [
+			  {
+				"@type": "Kind",
+				"fn": "CPSC Open Data: Questions or suggestions about this dataset?",
+				"hasEmail": "mailto:asalomon@cpsc.gov"
+			  }
+			]
+        }
+      ]
+    }
+  ],
+  "datasetSeries": [
+    {
+      "@type": "DatasetSeries",
+      "@id": "https://cpsc.gov/data/series/monthly-progress-report",
+      "title": "CPSC Monthly Progress Reports",
+      "description": "Recurring monthly recall-progress reports submitted by recalling firms. Individual monthly filings should be added as series members as CPSC publishes discrete vintages.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Consumer Product Safety Commission"
+      },
+      "contactPoint": [
+		  {
+			"@type": "Kind",
+			"fn": "CPSC Open Data",
+			"hasEmail": "mailto:suggestions@cpsc.gov"
+		  }
+		],
+      "accrualPeriodicity": "monthly",
+      "seriesMember": [
+        {
+          "@type": "Dataset",
+          "@id": "https://cpsc.gov/dataset/cpscs-monthly-progress-report-mpr",
+          "title": "Monthly Progress Report (MPR)",
+		  "description": "",
+		  "contactPoint": [
+			  {
+				"@type": "Kind",
+				"fn": "CPSC's Monthly Progress Report (MPR)",
+				"hasEmail": "mailto:asalomon@cpsc.gov"
+			  }
+			],
+		  "identifier": "https://catalog.data.gov/dataset/cpscs-monthly-progress-report-mpr"
+		}
+      ]
+    }
+  ]
+}
