@@ -13,7 +13,7 @@
     }
   },
   "contactPoint": {
-    "@type": "vcard:Kind",
+    "@type": "vcard:Contact",
     "fn": "CPSC Open Data",
     "hasEmail": "mailto:suggestions@cpsc.gov"
   },
@@ -60,7 +60,7 @@
         "name": "U.S. Consumer Product Safety Commission"
       },
       "contactPoint": {
-        "@type": "vcard:Kind",
+        "@type": "vcard:Contact",
         "fn": "CPSC Open Data",
         "hasEmail": "mailto:suggestions@cpsc.gov"
       },
@@ -73,7 +73,7 @@
         "015:00"
       ],
       "programCode": [
-        "015:00"
+        "015:000"
       ],
       "accessLevel": "public",
       "license": "https://www.usa.gov/publicdomain/label/1.0/",
@@ -113,7 +113,7 @@
         "name": "U.S. Consumer Product Safety Commission"
       },
       "contactPoint": {
-        "@type": "vcard:Kind",
+        "@type": "vcard:Contact",
         "fn": "CPSC Open Data",
         "hasEmail": "mailto:suggestions@cpsc.gov"
       },
@@ -123,7 +123,7 @@
         "015:00"
       ],
       "programCode": [
-        "015:00"
+        "015:000"
       ],
       "accessLevel": "public",
       "license": "https://www.usa.gov/publicdomain/label/1.0/",
@@ -163,7 +163,7 @@
         "name": "U.S. Consumer Product Safety Commission"
       },
       "contactPoint": {
-        "@type": "vcard:Kind",
+        "@type": "vcard:Contact",
         "fn": "CPSC Open Data",
         "hasEmail": "mailto:suggestions@cpsc.gov"
       },
@@ -173,7 +173,7 @@
         "015:00"
       ],
       "programCode": [
-        "015:00"
+        "015:000"
       ],
       "accessLevel": "public",
       "license": "https://www.usa.gov/publicdomain/label/1.0/",
@@ -217,7 +217,7 @@
         "name": "U.S. Consumer Product Safety Commission"
       },
       "contactPoint": {
-        "@type": "vcard:Kind",
+        "@type": "vcard:Contact",
         "fn": "CPSC Open Data",
         "hasEmail": "mailto:suggestions@cpsc.gov"
       },
@@ -227,7 +227,7 @@
         "015:00"
       ],
       "programCode": [
-        "015:00"
+        "015:000"
       ],
       "accessLevel": "public",
       "license": "https://www.usa.gov/publicdomain/label/1.0/",
@@ -267,7 +267,7 @@
         "name": "U.S. Consumer Product Safety Commission"
       },
       "contactPoint": {
-        "@type": "vcard:Kind",
+        "@type": "vcard:Contact",
         "fn": "CPSC Open Data",
         "hasEmail": "mailto:suggestions@cpsc.gov"
       },
@@ -277,7 +277,7 @@
         "015:00"
       ],
       "programCode": [
-        "015:00"
+        "015:000"
       ],
       "accessLevel": "public",
       "license": "https://www.usa.gov/publicdomain/label/1.0/",
@@ -294,10 +294,7 @@
           "format": "CSV"
         }
       ],
-      "temporal": {
-        "@type": "dcterms:PeriodOfTime",
-        "startDate": "2012-10-01"
-      }
+      "temporal": "2012-10-01/2030-12-31"
     },
     {
       "@type": "dcat:Dataset",
@@ -320,7 +317,7 @@
         "name": "U.S. Consumer Product Safety Commission"
       },
       "contactPoint": {
-        "@type": "vcard:Kind",
+        "@type": "vcard:Contact",
         "fn": "CPSC Open Data",
         "hasEmail": "mailto:suggestions@cpsc.gov"
       },
@@ -330,7 +327,7 @@
         "015:00"
       ],
       "programCode": [
-        "015:00"
+        "015:000"
       ],
       "accessLevel": "public",
       "license": "https://www.usa.gov/publicdomain/label/1.0/",
@@ -371,7 +368,7 @@
         "name": "U.S. Consumer Product Safety Commission"
       },
       "contactPoint": {
-        "@type": "vcard:Kind",
+        "@type": "vcard:Contact",
         "fn": "CPSC Open Data",
         "hasEmail": "mailto:suggestions@cpsc.gov"
       },
@@ -381,7 +378,7 @@
         "015:00"
       ],
       "programCode": [
-        "015:00"
+        "015:000"
       ],
       "accessLevel": "public",
       "license": "https://www.usa.gov/publicdomain/label/1.0/",
@@ -414,7 +411,7 @@
         "https://www.cpsc.gov/Data"
       ],
       "contactPoint": {
-        "@type": "vcard:Kind",
+        "@type": "vcard:Contact",
         "fn": "CPSC Open Data",
         "hasEmail": "mailto:suggestions@cpsc.gov"
       },
@@ -432,7 +429,7 @@
           "description": "REST service exposing CPSC consumer product recall records in JSON (and other formats).",
           "identifier": "https://catalog.data.gov/dataset/recalls-api",
           "contactPoint": {
-            "@type": "vcard:Kind",
+            "@type": "vcard:Contact",
             "fn": "CPSC Open Data",
             "hasEmail": "mailto:asalomon@cpsc.gov"
           }
@@ -452,7 +449,7 @@
         "https://www.cpsc.gov/Data"
       ],
       "contactPoint": {
-        "@type": "vcard:Kind",
+        "@type": "vcard:Contact",
         "fn": "CPSC Open Data",
         "hasEmail": "mailto:suggestions@cpsc.gov"
       },
@@ -470,7 +467,7 @@
           "description": "REST service exposing CPSC civil and criminal penalty records in JSON.",
           "identifier": "https://www.saferproducts.gov/RestWebServices/Penalty",
           "contactPoint": {
-            "@type": "vcard:Kind",
+            "@type": "vcard:Contact",
             "fn": "CPSC Open Data: Questions or suggestions about this dataset?",
             "hasEmail": "mailto:asalomon@cpsc.gov"
           }
@@ -489,7 +486,7 @@
         "name": "U.S. Consumer Product Safety Commission"
       },
       "contactPoint": {
-        "@type": "vcard:Kind",
+        "@type": "vcard:Contact",
         "fn": "CPSC Open Data",
         "hasEmail": "mailto:suggestions@cpsc.gov"
       },
@@ -501,7 +498,7 @@
           "title": "Monthly Progress Report (MPR)",
           "identifier": "https://catalog.data.gov/dataset/cpscs-monthly-progress-report-mpr",
           "contactPoint": {
-            "@type": "vcard:Kind",
+            "@type": "vcard:Contact",
             "fn": "CPSC's Monthly Progress Report (MPR)",
             "hasEmail": "mailto:asalomon@cpsc.gov"
           }
